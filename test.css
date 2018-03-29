@@ -1,0 +1,17 @@
+body{
+    column-count: 2;
+}
+
+#one{
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   flex-direction: column;
+   flex-flow: column wrap;
+   width: 680px;
+}
+@media print {
+
+}
+@page {
+}
