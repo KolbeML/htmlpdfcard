@@ -1,17 +1,29 @@
-body{
-    column-count: 2;
+body,html {
+  padding: 0;
 }
 
-#one{
-   display: flex;
-   justify-content: center;
-   align-content: center;
-   flex-direction: column;
-   flex-flow: column wrap;
-   width: 680px;
+.letter {
+  background-color: #0069b3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  line-height: 1;
+  cursor: pointer;
+  max-width: 336px;
 }
-@media print {
 
+#column_container {
+    width: 700px;
+    margin: 0 auto;
+    font-size: 0;
 }
-@page {
+
+#column_1{
+    width: 350px;
+    margin: 0;
+    padding: 0;
+}
+#column_2{
+    width: 350px;
 }
