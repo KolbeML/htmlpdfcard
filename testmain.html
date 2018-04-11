@@ -13,7 +13,7 @@
             var org = "Towson University";
             var url = "clark.center/skaza";
             var sourcePDF = "businesscardformempty.pdf";
-            var destinationPDF = "test_complete.pdf";
+            var destinationPDF = "tmp/test_complete.pdf";
 
             var data = {
                 Name2: name,
@@ -53,7 +53,7 @@
                 console.log("Form is filled.");
             });
 
-            window.location = "test_complete.pdf";
+            window.location = "tmp/test_complete.pdf";
             
         }
         window.onload = generate;
