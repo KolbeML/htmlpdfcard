@@ -1,11 +1,11 @@
-function generate() {
-  var pdfFiller = require('pdffiller');
 
+  var pdfFiller = require('pdffiller');
+console.log("hi")
   var name = "Jewel Chiong";
   var org = "Towson University";
   var url = "clark.center/howdy";
-  var sourcePDF = "businesscardformempty.pdf";
-  var destinationPDF = "test_complete.pdf";
+  var sourcePDF = "https://s3.amazonaws.com/businesscard-resources/businesscardformempty.pdf";
+  var destinationPDF = "test/test_complete.pdf";
 
   var data = {
     Name2: name,
@@ -45,5 +45,4 @@ function generate() {
     console.log("Form is filled.");
   });
 
-  window.location = "test_complete.pdf";
-}
+  //window.location = "test_complete.pdf";
